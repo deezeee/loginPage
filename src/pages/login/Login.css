@@ -1,0 +1,170 @@
+:root {
+  --grey-filter: invert(83%) sepia(8%) saturate(133%) hue-rotate(314deg)
+    brightness(90%) contrast(90%);
+  --green-filter: invert(70%) sepia(71%) saturate(308%) hue-rotate(70deg)
+    brightness(91%) contrast(94%);
+}
+
+.login-form-container {
+  max-width: 450px;
+  min-width: 450px;
+  margin: 0 auto;
+  background-color: var(--pure-white-color);
+  padding: 30px;
+  box-shadow: 0px 10px 15px var(--light-grey-color);
+  border-radius: 5px;
+}
+
+.login-form-container .login-form-title {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.login-form-container > div,
+.login-form-body > div {
+  margin-bottom: 20px;
+}
+
+.login-email > div,
+.login-password > div {
+  margin-bottom: 10px;
+}
+
+.login-form-container .login-register,
+.login-form-container .login-more {
+  font-size: 14px;
+}
+
+.login-form-container .login-register a {
+  margin-left: 5px;
+}
+
+.login-form-container input {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.login-password .password-field,
+.login-email input {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.login-password .password-field input {
+  border-radius: 5px;
+  border: 0px solid rgba(0, 0, 0, 0.2);
+}
+
+.login-form-container input:focus,
+.login-form-container input:hover {
+  outline: none;
+}
+
+.login-password .password-field:focus,
+.login-password .password-field:hover,
+.login-email input:hover,
+.login-email input:focus {
+  outline: none;
+  border: 1px solid green;
+}
+
+.login-email div,
+.login-password div {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.login-password .password-field {
+  position: relative;
+}
+
+.login-password .password-field .show-password {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2%;
+}
+
+.login-remember .remember-me {
+  filter: var(--grey-filter);
+}
+
+.login-remember .remember-me.checked {
+  filter: var(--green-filter);
+}
+
+.login-password .password-field .show-password:hover {
+  cursor: pointer;
+}
+
+.login-password .password-field .show-password-icon.checked {
+  filter: var(--green-filter);
+}
+
+.login-password .password-field .show-password-icon {
+  filter: var(--grey-filter);
+}
+
+.login-form-container img.icon {
+  display: inline;
+  width: 15px;
+  height: 15px;
+}
+
+.login-form-container .login-more {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login-remember,
+.login-remember div {
+  display: flex;
+  align-items: center;
+}
+
+.login-remember span {
+  margin-left: 8px;
+}
+
+.login-remember div:hover {
+  cursor: pointer;
+}
+
+.login-submit {
+  width: 120px;
+  height: 40px;
+  font-weight: 500;
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 40px;
+  border-radius: 5px;
+}
+
+.login-submit:hover {
+  cursor: pointer;
+}
+
+.login-submit.disabled:hover {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.login-submit.disabled {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.login-submit.active {
+  background-color: rgb(109, 211, 109);
+  color: white;
+}
+
+.login-submit.active:hover {
+  background-color: rgba(109, 211, 109, 0.5);
+  color: rgb(160, 146, 146);
+}
